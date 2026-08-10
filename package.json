@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit",
     "build": "pnpm lint && tsc",
     "start": "node dist/index.js",
-    "dev": "tsx src/index.ts",
+    "dev": "tsc src/index.ts",
     "run": "pnpm build && pnpm start"
   },
   "keywords": [],
@@ -31,5 +31,8 @@
     "lefthook": "^2.1.10",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.66.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
   }
 }
