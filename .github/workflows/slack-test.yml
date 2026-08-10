@@ -33,4 +33,7 @@ jobs:
       - name: Send Slack message
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+          JIRA_EMAIL: ${{secrets.JIRA_EMAIL}}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
         run: pnpm start
