@@ -2,7 +2,7 @@ name: Weekly Report
 
 on:
   schedule:
-    - cron: "0 11 * * *" # 16:30 IST (UTC+5:30) every day
+    - cron: "45 11 * * *" # 16:30 IST (UTC+5:30) every day
 
   workflow_dispatch:
 
@@ -36,4 +36,9 @@ jobs:
           JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
           JIRA_EMAIL: ${{secrets.JIRA_EMAIL}}
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          BITBUCKET_WORKSPACE: ${{ secrets.BITBUCKET_WORKSPACE }}
+          BITBUCKET_REPO_SLUG: ${{ secrets.BITBUCKET_REPO_SLUG }}
+          BITBUCKET_EMAIL: ${{ secrets.BITBUCKET_EMAIL }}
+          BITBUCKET_API_TOKEN: ${{ secrets.BITBUCKET_API_TOKEN }}
+
         run: pnpm start
