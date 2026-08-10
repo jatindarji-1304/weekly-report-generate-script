@@ -6,6 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "build": "pnpm lint && tsc",
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
@@ -27,6 +28,7 @@
     "eslint-plugin-unused-imports": "^4.4.1",
     "globals": "^17.9.0",
     "jiti": "^2.7.0",
+    "lefthook": "^2.1.10",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.66.0"
   }
