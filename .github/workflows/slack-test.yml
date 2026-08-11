@@ -2,7 +2,7 @@ name: Weekly Report
 
 on:
   schedule:
-    - cron: '55 18 * * *' # 18:55 in Asia/Kolkata, every day
+    - cron: '30 9 * * 1' # 09:30 in Asia/Kolkata, every monday
       timezone: "Asia/Kolkata"
 
   workflow_dispatch:
