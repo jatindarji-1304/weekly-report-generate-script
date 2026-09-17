@@ -198,7 +198,7 @@ The application requires specific environment variables to authenticate with ext
 | `BITBUCKET_REPO_SLUG` | **Yes** | Bitbucket repository slug | `my-service-repo` |
 | `BITBUCKET_EMAIL` | **Yes** | Account email associated with the Bitbucket token | `developer@example.com` |
 | `BITBUCKET_API_TOKEN` | **Yes** | Bitbucket App password / API token | `ATATT...` |
-| `SLACK_WEBHOOK_URL` | **Yes** | Full Incoming Webhook URL from Slack | `https://hooks.slack.com/services/...` |
+| `SLACK_WEBHOOK_URL` | **Yes** | Full Incoming Webhook URL from Slack | `your webhook url` |
 
 > [!NOTE]
 > `JIRA_PROJECT_KEY` is present in the configuration template. The default JQL query filters by `assignee = currentUser() AND created >= -7d`. If you wish to restrict results to a single project, you can update the JQL query in `src/client/jira.client.ts` to include `AND project = '${process.env.JIRA_PROJECT_KEY}'`.
