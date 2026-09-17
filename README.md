@@ -209,7 +209,7 @@ The application requires specific environment variables to authenticate with ext
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/jatindarji-1304/weekly-report-generate-script.git)
    cd weekly-report-generate-script
    ```
 
